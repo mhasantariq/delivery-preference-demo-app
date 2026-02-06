@@ -38,6 +38,7 @@ export const Large: Story = {
 }
 
 export const AllSizes: Story = {
+  args: {},
   render: () => (
     <div className="flex items-center gap-8">
       <div className="flex flex-col items-center gap-2">
@@ -57,6 +58,7 @@ export const AllSizes: Story = {
 }
 
 export const InButton: Story = {
+  args: {},
   render: () => (
     <div className="flex gap-4">
       <button className="px-4 py-2 bg-primary text-primary-foreground rounded-md flex items-center gap-2">
@@ -72,6 +74,7 @@ export const InButton: Story = {
 }
 
 export const Centered: Story = {
+  args: {},
   render: () => (
     <div className="flex items-center justify-center w-64 h-32 border rounded-lg">
       <Loader size="md" />

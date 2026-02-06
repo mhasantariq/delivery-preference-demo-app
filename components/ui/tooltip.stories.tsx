@@ -23,6 +23,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
+  args: {},
   render: () => (
     <Tooltip>
       <TooltipTrigger asChild>
@@ -36,6 +37,7 @@ export const Default: Story = {
 }
 
 export const WithIcon: Story = {
+  args: {},
   render: () => (
     <div className="flex gap-4">
       <Tooltip>
@@ -63,6 +65,7 @@ export const WithIcon: Story = {
 }
 
 export const Positions: Story = {
+  args: {},
   render: () => (
     <div className="grid grid-cols-3 gap-8 place-items-center p-8">
       <Tooltip>
@@ -102,6 +105,7 @@ export const Positions: Story = {
 }
 
 export const LongContent: Story = {
+  args: {},
   render: () => (
     <Tooltip>
       <TooltipTrigger asChild>
@@ -118,6 +122,7 @@ export const LongContent: Story = {
 }
 
 export const WithFormField: Story = {
+  args: {},
   render: () => (
     <div className="w-64 space-y-2">
       <div className="flex items-center gap-2">

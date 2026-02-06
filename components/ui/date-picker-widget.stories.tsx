@@ -29,6 +29,9 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
+  args: {
+    onChange: () => {},
+  },
   render: () => {
     const [value, setValue] = React.useState<string>()
     return (
@@ -40,6 +43,9 @@ export const Default: Story = {
 }
 
 export const WithLabel: Story = {
+  args: {
+    onChange: () => {},
+  },
   render: () => {
     const [value, setValue] = React.useState<string>()
     return (
@@ -56,6 +62,9 @@ export const WithLabel: Story = {
 }
 
 export const WithError: Story = {
+  args: {
+    onChange: () => {},
+  },
   render: () => {
     const [value, setValue] = React.useState<string>()
     return (
@@ -72,6 +81,9 @@ export const WithError: Story = {
 }
 
 export const WithMinDate: Story = {
+  args: {
+    onChange: () => {},
+  },
   render: () => {
     const [value, setValue] = React.useState<string>()
     const today = new Date().toISOString().split('T')[0]
@@ -89,6 +101,9 @@ export const WithMinDate: Story = {
 }
 
 export const Inline: Story = {
+  args: {
+    onChange: () => {},
+  },
   render: () => {
     const [value, setValue] = React.useState<string>()
     return (
@@ -105,6 +120,9 @@ export const Inline: Story = {
 }
 
 export const Interactive: Story = {
+  args: {
+    onChange: () => {},
+  },
   render: () => {
     const [value, setValue] = React.useState<string>()
     return (

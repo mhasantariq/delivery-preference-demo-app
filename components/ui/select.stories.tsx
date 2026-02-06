@@ -24,6 +24,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
+  args: {},
   render: () => {
     const [value, setValue] = React.useState<string>()
     return (
@@ -44,6 +45,7 @@ export const Default: Story = {
 }
 
 export const WithGroups: Story = {
+  args: {},
   render: () => {
     const [value, setValue] = React.useState<string>()
     return (
@@ -74,6 +76,7 @@ export const WithGroups: Story = {
 }
 
 export const WithDefaultValue: Story = {
+  args: {},
   render: () => {
     const [value, setValue] = React.useState<string>('option2')
     return (
@@ -94,6 +97,7 @@ export const WithDefaultValue: Story = {
 }
 
 export const Disabled: Story = {
+  args: {},
   render: () => {
     return (
       <div className="w-64">
@@ -113,6 +117,7 @@ export const Disabled: Story = {
 }
 
 export const LongList: Story = {
+  args: {},
   render: () => {
     const [value, setValue] = React.useState<string>()
     const items = Array.from({ length: 20 }, (_, i) => `Option ${i + 1}`)
@@ -136,6 +141,7 @@ export const LongList: Story = {
 }
 
 export const Interactive: Story = {
+  args: {},
   render: () => {
     const [value, setValue] = React.useState<string>()
     return (

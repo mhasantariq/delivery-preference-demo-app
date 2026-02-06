@@ -48,6 +48,11 @@ const deliveryOptions: RadioOption[] = [
 ]
 
 export const Default: Story = {
+  args: {
+    name: 'delivery',
+    options: deliveryOptions,
+    onChange: () => {},
+  },
   render: () => {
     const [value, setValue] = React.useState<string>()
     return (
@@ -64,6 +69,11 @@ export const Default: Story = {
 }
 
 export const WithLabel: Story = {
+  args: {
+    name: 'delivery',
+    options: deliveryOptions,
+    onChange: () => {},
+  },
   render: () => {
     const [value, setValue] = React.useState<string>()
     return (
@@ -81,6 +91,11 @@ export const WithLabel: Story = {
 }
 
 export const WithError: Story = {
+  args: {
+    name: 'delivery',
+    options: deliveryOptions,
+    onChange: () => {},
+  },
   render: () => {
     const [value, setValue] = React.useState<string>()
     return (
@@ -99,6 +114,11 @@ export const WithError: Story = {
 }
 
 export const SimpleOptions: Story = {
+  args: {
+    name: 'simple',
+    options: [],
+    onChange: () => {},
+  },
   render: () => {
     const [value, setValue] = React.useState<string>()
     const simpleOptions: RadioOption[] = [
@@ -121,6 +141,11 @@ export const SimpleOptions: Story = {
 }
 
 export const WithSelectedValue: Story = {
+  args: {
+    name: 'delivery',
+    options: deliveryOptions,
+    onChange: () => {},
+  },
   render: () => {
     const [value, setValue] = React.useState<string>('DELIVERY')
     return (
@@ -138,6 +163,11 @@ export const WithSelectedValue: Story = {
 }
 
 export const Interactive: Story = {
+  args: {
+    name: 'delivery',
+    options: deliveryOptions,
+    onChange: () => {},
+  },
   render: () => {
     const [value, setValue] = React.useState<string>()
     return (

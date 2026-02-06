@@ -37,6 +37,7 @@ export const Default: Story = {
 }
 
 export const Variants: Story = {
+  args: {},
   render: () => (
     <div className="flex flex-wrap gap-4">
       <Button variant="default">Default</Button>
@@ -50,6 +51,7 @@ export const Variants: Story = {
 }
 
 export const Sizes: Story = {
+  args: {},
   render: () => (
     <div className="flex items-center gap-4">
       <Button size="sm">Small</Button>
@@ -63,6 +65,7 @@ export const Sizes: Story = {
 }
 
 export const WithIcon: Story = {
+  args: {},
   render: () => (
     <div className="flex gap-4">
       <Button icon={<Mail />}>Email</Button>
@@ -74,6 +77,7 @@ export const WithIcon: Story = {
 }
 
 export const Loading: Story = {
+  args: {},
   render: () => (
     <div className="flex gap-4">
       <Button loading>Loading</Button>
@@ -88,6 +92,7 @@ export const Loading: Story = {
 }
 
 export const Disabled: Story = {
+  args: {},
   render: () => (
     <div className="flex gap-4">
       <Button disabled>Disabled</Button>

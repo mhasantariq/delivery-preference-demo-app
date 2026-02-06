@@ -16,7 +16,7 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   render: () => {
-    const [selected, setSelected] = React.useState<Date>()
+    const [selected, setSelected] = React.useState<Date | undefined>()
     return (
       <div className="border rounded-lg">
         <Calendar selected={selected} onSelect={setSelected} />
@@ -27,7 +27,7 @@ export const Default: Story = {
 
 export const WithSelectedDate: Story = {
   render: () => {
-    const [selected, setSelected] = React.useState<Date>(new Date())
+    const [selected, setSelected] = React.useState<Date | undefined>(new Date())
     return (
       <div className="border rounded-lg">
         <Calendar selected={selected} onSelect={setSelected} />
@@ -38,7 +38,7 @@ export const WithSelectedDate: Story = {
 
 export const DisablePastDates: Story = {
   render: () => {
-    const [selected, setSelected] = React.useState<Date>()
+    const [selected, setSelected] = React.useState<Date | undefined>()
     const today = new Date()
     today.setHours(0, 0, 0, 0)
     
@@ -62,7 +62,7 @@ export const DisablePastDates: Story = {
 
 export const InCard: Story = {
   render: () => {
-    const [selected, setSelected] = React.useState<Date>()
+    const [selected, setSelected] = React.useState<Date | undefined>()
     return (
       <div className="w-80 border rounded-lg bg-card p-4">
         <h3 className="text-lg font-semibold mb-4">Select Date</h3>
@@ -79,7 +79,7 @@ export const InCard: Story = {
 
 export const InitialFocus: Story = {
   render: () => {
-    const [selected, setSelected] = React.useState<Date>()
+    const [selected, setSelected] = React.useState<Date | undefined>()
     return (
       <div className="border rounded-lg">
         <Calendar 

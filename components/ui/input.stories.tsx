@@ -91,6 +91,7 @@ export const Disabled: Story = {
 }
 
 export const AllStates: Story = {
+  args: {},
   render: () => (
     <div className="w-80 space-y-6">
       <Input label="Default" placeholder="Enter text" />

@@ -15,6 +15,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
+  args: {},
   render: () => (
     <Card className="w-96">
       <CardHeader>
@@ -29,6 +30,7 @@ export const Default: Story = {
 }
 
 export const WithFooter: Story = {
+  args: {},
   render: () => (
     <Card className="w-96">
       <CardHeader>
@@ -47,6 +49,7 @@ export const WithFooter: Story = {
 }
 
 export const Simple: Story = {
+  args: {},
   render: () => (
     <Card className="w-96">
       <CardContent className="pt-6">
@@ -57,6 +60,7 @@ export const Simple: Story = {
 }
 
 export const MultipleCards: Story = {
+  args: {},
   render: () => (
     <div className="grid grid-cols-3 gap-4 w-full max-w-4xl">
       <Card>

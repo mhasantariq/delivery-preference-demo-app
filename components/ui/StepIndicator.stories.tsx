@@ -65,6 +65,10 @@ export const FourSteps: Story = {
 }
 
 export const Interactive: Story = {
+  args: {
+    currentStep: 1,
+    steps: ['Preferences', 'Summary'],
+  },
   render: () => {
     const [currentStep, setCurrentStep] = React.useState(1)
     return (
