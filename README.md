@@ -2,6 +2,9 @@
 
 A Next.js application that simulates a delivery preference flow with authentication, form handling, state management, theme switching, and a polished UX.
 
+**Live Demo:** https://delivery-preference-demo-app-skf6.vercel.app/
+**Storybook:** https://delivery-preference-demo-app-kzhk.vercel.app/
+
 ## Tech Stack
 
 - **Next.js 16** (App Router)
