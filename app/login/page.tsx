@@ -109,9 +109,6 @@ export default function LoginPage() {
                 )}
               </button>
             </div>
-            {errors.password?.message && (
-              <p className="mt-1.5 text-sm text-destructive">{errors.password.message}</p>
-            )}
           </div>
 
           {error && (
